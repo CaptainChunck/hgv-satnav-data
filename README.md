@@ -14,6 +14,7 @@ Everything here is built from free, open data. There is no app code in this repo
 | `basemap.pmtiles.part1`, `.part2` | Offline map picture (PMTiles, OpenMapTiles schema) | 1.6 GB |
 | `overlay.sqlite` | Height, width and weight limits, tunnel categories and other hazards, for warnings | 48 MB |
 | `search.sqlite` | Offline postcode and place search | 175 MB |
+| `pois.sqlite` | Points of interest: services, HGV fuel, lorry parks, food, showers and more | 21 MB |
 | `manifest.json` | Every file's size and SHA-256 checksum; the app reads this | 2 KB |
 
 GitHub limits a release file to 2 GiB, so the two big packs are split. The app joins the parts
@@ -30,7 +31,8 @@ On Windows: `copy /b valhalla_tiles.tar.part1 + valhalla_tiles.tar.part2 valhall
 
 - **OpenStreetMap.** Map data © OpenStreetMap contributors, available under the
   [Open Database License (ODbL) 1.0](https://www.openstreetmap.org/copyright). The routing,
-  map and restriction packs are derived from the Geofabrik United Kingdom extract, and are
+  map, restriction and points-of-interest packs are derived from the Geofabrik United Kingdom
+  extract, and are
   themselves made available under the ODbL.
 - **Map pack.** Uses the [OpenMapTiles](https://openmaptiles.org/) schema (© OpenMapTiles,
   CC-BY 4.0), built with [Planetiler](https://github.com/onthegomap/planetiler), and includes
